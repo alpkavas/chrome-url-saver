@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "URL Saver",
+  "version": "1.0.0",
+  "description": "Kullanıcıların URL'leri kaydetmelerine ve PDF olarak indirmelerine olanak tanır.",
+  "permissions": ["storage", "activeTab", "scripting", "webRequest"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "./ico/i.png",
+      "48": "./ico/i.png",
+      "128": "./ico/i.png"
+    }
+  },
+  "icons": {
+    "16": "./ico/i.png",
+    "48": "./ico/i.png",
+    "128": "./ico/i.png"
+  },
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' ; upgrade-insecure-requests;"
+  }
+}
